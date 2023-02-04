@@ -586,7 +586,9 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 100.47095761381482 }
+// #define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.431372549, 78.431372549, 4081.632653061, 100.47095761381482 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.431372549, 78.431372549, 4207.86871449588, 100.47095761381482 }
+
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -623,9 +625,9 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 10.0
-#define DEFAULT_YJERK                 10.0
-#define DEFAULT_ZJERK                  0.3
+#define DEFAULT_XJERK                 9.0
+#define DEFAULT_YJERK                 9.0
+#define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
 
 /**
@@ -756,7 +758,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER -25     // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -10     // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -5.55    // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -4.85    // Z offset: -below +above  [the nozzle]
 // MAS CERCA DE 0 SUBE EL EXTRUSOR MAS LEJOS DE 0 BAJA EL EXTRUSOR
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
